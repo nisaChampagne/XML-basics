@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Food>
+<name>Potato Soup</name>
+<price>$5.00</price>
+<type>Soup</type>
+</Food>
