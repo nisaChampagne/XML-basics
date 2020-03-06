@@ -1,0 +1,61 @@
+
+<!-- 
+
+    <?xml indicates that this is an XML document
+    version literally shows what version we are using
+    encoding will just show what encoding format we will be using
+
+-->
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!--
+
+declares and defines the elements used in the document class
+
+-->
+
+<!DOCTYPE Catalog [
+    <!ELEMENT Catalog (Title, Artist, Price) >
+    <!ELEMENT CD (<!-- CDATA -->)>
+    <!ELEMENT Title (<!-- CDATA -->)>
+    <!ELEMENT Artist (<!-- CDATA -->)>
+    <!ELEMENT Price (<!-- CDATA -->)>
+
+]>
+
+
+<!--
+
+defines the content of the XML document
+
+-->
+
+<Catalog> <!--Root Element-->
+    <CD> <!--child element-->
+        <Title>City of Evil</Title> <!--child element-->
+        <Artist>Avenged Sevenfold</Artist> <!--child element-->
+        <Price>15.00</Price> <!--child element-->
+    </CD> <!--child element closing tag-->
+    <CD>
+        <Title>Another Album</Title>
+        <Artist>Panic! At The Disco</Artist>
+        <Price>19.90</Price>
+    </CD>
+</Catalog>
+
+
+<!--
+
+Markup can be divided into:
+
+1) Structure: describes the form of the document by specifying the relationship between different elements in the document
+            - emphasizes to specify a single non empty root element that contains other elements and the content.
+
+2) Semantics: describes how each element is specified to the outside world of the document.
+
+    ex: 
+        HTML enables web browsers assigns paragraph to the tags <p> and </p> but not to the tags <Message> and </Message>
+
+3) Style: specifies whether the tag is bold, normal, and blue in color or with the font size 10
+
+-->
